@@ -19,5 +19,19 @@
 
     const result1 = kgToGram(1000) as number
     const result2 = kgToGram('1000') as string
+
+    type CustomError = {
+        message: string
+    }
+
+    try{
+
+    }
+    catch(error){
+        console.log((error as CustomError).message)
+    }
+
+
+
     //
 }
