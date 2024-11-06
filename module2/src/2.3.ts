@@ -79,6 +79,25 @@
 
     ]
 
+    // type User10 = {
+    //     name: string,
+    //     age: number
+    // }
+
+    interface User10 {
+        name: string,
+        age: number
+    }
+
+    const user10: GenericArray<User10> = [
+        {
+            name: "riday",
+            age: 21
+        }
+    ]
+
+
+    
 
 
     //
