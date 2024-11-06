@@ -57,4 +57,5 @@
 
     const student1 = addCourseToStudent({ name: 'x', email: 'x.com', devType: 'nlwd' })
     const student2 = addCourseToStudent({ name: 'y', email: 'y.com', watch: 'apple' })
+    const student3 = addCourseToStudent({ name: 'riday' })
 }
