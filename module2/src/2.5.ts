@@ -58,4 +58,12 @@
     const student1 = addCourseToStudent({ name: 'x', email: 'x.com', devType: 'nlwd' })
     const student2 = addCourseToStudent({ name: 'y', email: 'y.com', watch: 'apple' })
     const student3 = addCourseToStudent({ name: 'riday' })
+
+    type Student = {
+        name: string;
+        age: number
+    }
+    const student4 = addCourseToStudent<Student>({ name: "kuddus", age: 21 })
+    // explicetly type bole dile oi type er proper onushare value dite hobe. r type na bole dile icche moto value deya jabe example
+    const sutdent5 = addCourseToStudent({ name: "sakib", role: "CR" })
 }
