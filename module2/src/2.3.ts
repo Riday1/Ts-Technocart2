@@ -65,8 +65,10 @@
 
     type GenericArray1<T> = Array<T>
 
+    // array of string using generic type
     const UserNames: GenericArray1<string> = ["Mr x", "Mr y"]
 
+    // array of object using generic type
     const Users: GenericArray1<{ name: string, age: number }> = [
         {
             name: "riday",

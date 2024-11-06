@@ -16,11 +16,13 @@
 
     type NormalWatch = {
         name: string;
-        modle: string;
+        model: string;
         quality: string;
         manufacturer: "china"
     }
-    const poorDeveloper: Developer<NormalWatch, null> = {
+
+    // generic type
+    const poorDeveloper: Developer<NormalWatch> = {
         name: "riday",
         computer: {
             brand: "HP",
@@ -29,7 +31,7 @@
         },
         smartWatch: {
             name: "Unknown",
-            modle: "fj3",
+            model: "fj3",
             quality: "cheap",
             manufacturer: "china"
         },
@@ -46,6 +48,8 @@
     interface Yamaha {
         name: string
     }
+
+    // generic interface
     const poshDeveloper: Developer<AppleWatch, Yamaha> = {
         name: "mezba",
         computer: {
