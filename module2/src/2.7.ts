@@ -18,12 +18,19 @@
         address: 'ctg'
     }
 
+    const car = {
+        model: "m-16",
+        year: 2026
+    }
     const getPropertyValue = <X, Y extends keyof X>(obj: X, key: Y) => {
         return obj[key]
     }
 
-    getPropertyValue(user, "name")
 
+
+
+    getPropertyValue(user, "name")
+    getPropertyValue(car, "year")
 
 
 
